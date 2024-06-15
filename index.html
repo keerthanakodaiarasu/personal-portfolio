@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keerthana - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Keerthana Kodaiarasu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Keerthana Kodaiarasu">Keerthana Kodaiarasu</h1>
+
+          <p class="title">Software Engineer</p>
+          <p class="title"style="margin-top: 10px;">Full-Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="mailto:kkeerthana1997@gmail.com" target="_blank" class="social-link" title="kkeerthana1997@gmail.com">
+              <ion-icon name="paper-plane"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/keerthanak-23/" target="_blank" class="social-link" title="linkedin.com/in/keerthanak-23">
+              <ion-icon name="logo-linkedIn"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/kkeerthana23" target="_blank" class="social-link" title="github.com/kkeerthana23">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" target="_blank" class="social-link" title="" download="Keerthana_Kodaiarasu_Resume.pdf">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello! I'm Keerthana Kodaiarasu, a passionate software engineer based in California. I have around 3 years of work experience as a Full-Stack Developer and also recently graduated with a Master of Science in Computer Science. Along with my passion for coding I bring a strong academic foundation and a rich professional background to the table.
+          </p>
+
+          <p>
+            With over three years of professional experience, I have developed a diverse skill set in programming languages such as Java, Python, and JavaScript, and have worked extensively with frameworks like Angular, React, and Node.js. My experience spans full-stack development, where I have built and optimized web applications, developed scalable AWS solutions, and led projects that improved system performance and user experience.
+          </p>
+
+          <p>
+            When I'm not coding, I love exploring new hiking trails and experimenting with new recipes in the kitchen. I believe that a well-rounded life fuels creativity and innovation.
+          </p>
+
+          <p>
+            I'm always excited to explore new technologies and collaborate on impactful projects. Feel free to reach out to me via email or connect with me on LinkedIn. You can also check out my projects on GitHub.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">California State University, Sacramento</h4>
+
+              <span>Aug 2021 — Dec 2023</span>
+
+              <p class="timeline-text">
+                Master of Science in Computer Science
+              </p>
+              <p class="timeline-text">
+                GPA: 3.81/4
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Anna University</h4>
+
+              <span>Aug 2015 — Apr 2019</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering in Computer Science and Engineering
+              </p>
+
+              <p class="timeline-text">
+                GPA: 3.4/4
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="bag-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineering Intern</h4>
+              <span>Hornblower Group</span>
+              <span>Jun 2023 — Dec 2023</span>
+
+              <ul class="styled-list">
+                <li>
+                  Mastered the development process, culture and codebase to deliver highly scalable products
+                </li>
+                <li>
+                  Developed 12+ end-to-end major features including Contract Management, Customer Account, and Ticket purchase flows for the Ticketing and Reservations platform using React, Node.js, and AWS services like DynamoDB, Lambda, AppSync, S3
+                </li>
+                <li>
+                  Configured scalable AWS AppSync to meet the scaling demands of the system thereby eliminating limit restrictions on the number of GraphQL APIs to support continuous and seamless development operations and product flows
+                </li>
+                <li>
+                  Debugged and updated 21+ complex issues thereby ensuring smooth purchase flows and seamless full-stack data integration
+                </li>
+              </ul>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Systems Engineer</h4>
+              <span>Tata Consultancy Services</span>
+              <span>May 2019 — Aug 2021</span>
+
+              <p class="timeline-text">
+                <ul class="styled-list">
+                  <li>
+                    2+ years of Full-stack development experience in Agile project planning and delivery lifecycle management SaaS tool
+                  </li>
+                  <li>
+                    Collaborated with Product Managers and Market Research teams to brainstorm, design, and prototype 10 product features
+                  </li>
+                  <li>Experienced in creating responsive designs with CSS preprocessors and templating engines</li>
+                  <li>Designed and built 8+ major features and 12+ minor features using Angular, Java Spring Boot, and PostgreSQL</li>
+                  <li>Devised RESTful API to deliver key business functionalities as microservice</li>
+                  <li>Experienced in JSON, AJAX web technologies and Test-Driven-Development (TDD)</li>
+                  <li>Spearheaded a major feature, leading software evaluations, code reviews, and driving the adoption of unit testing, making
+                  data-informed decisions resulting in a 50% reduction in backlogs with each sprint improving the User Interface/Experiences</li>
+                  <li>Maximized code performance by SQL query optimization and achieved improvement in application’s performance by 25%</li>
+                  <li>On-boarded and mentored a 6-member team of junior developers, fostering a collaborative and cross-functional environment</li>
+                  
+                </ul>
+              </p>
+
+            </li>
+
+            <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li> -->
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="bag-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Other Experiences</h3>
+          </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teaching Assistant</h4>
+              <span>California State University, Sacramento</span>
+              <span>Jan 2022 — May 2023</span>
+
+              <ul class="styled-list">
+                <li>
+                  Facilitated Computer Networks lab sessions for 75+ students and aided professor with course-related tasks
+                </li>
+                <li>
+                  Mentored and guided 90+ undergraduate students with hands-on experience in programming using Java, and Computer Architecture; evaluated students’ work and provided critical feedback to enhance performance
+                </li>
+              </ul>
+
+              <p class="timeline-text">
+                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IRT Service Desk Student Assistant</h4>
+              <span>California State University, Sacramento</span>
+              <span>Oct 2022 — May 2023</span>
+
+              <p class="timeline-text">
+                <ul class="styled-list">
+                  <li>
+                    Assisted CSUS community members with technical support for campus applications, course-specific softwares and services via 800+ tickets through phone calls, emails and chats
+                  </li>
+                  <li>Achieved an overall of 90% first call resolution rate and documented resolutions to common issues as articles on ServiceNow's service desk platform</li>
+                </ul>
+              </p>
+
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/python.png" alt="client logo" title="Python">
+                <span class="tooltiptext">Python</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/java.png" alt="client logo">
+                <span class="tooltiptext">Java</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/javascript.png" alt="client logo">
+                <span class="tooltiptext">JavaScript</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/html.png" alt="client logo">
+                <span class="tooltiptext">HTML5</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/css.png" alt="client logo">
+                <span class="tooltiptext">CSS</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/postgresql.png" alt="client logo">
+                <span class="tooltiptext">PostgreSQL</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/nodejs.png" alt="client logo">
+                <span class="tooltiptext">Node.js</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/spring-boot.png" alt="client logo" title="Python">
+                <span class="tooltiptext">Spring Boot</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/angular.png" alt="client logo">
+                <span class="tooltiptext">Angular</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/react.png" alt="client logo">
+                <span class="tooltiptext">ReactJS</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/graphql.png" alt="client logo">
+                <span class="tooltiptext">GraphQL</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/sql.png" alt="client logo">
+                <span class="tooltiptext">MySQL</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" class="tooltip">
+                <img src="./assets/images/aws.png" alt="client logo">
+                <span class="tooltiptext">AWS</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Application</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Work Experience</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Application</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Work Experience</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web application">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_1.png" alt="Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Carbon Emission Dashboard</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Paraphrase Detection</h3>
+
+                <p class="project-category">Deep Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="work experience">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jile - Agile Product Management</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="work experience">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_4.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ticketing and Reservations</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_5.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Job Recommendation</h3>
+
+                <p class="project-category">Deep Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_6.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Plant Disease Detection</h3>
+
+                <p class="project-category">Deep Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_7.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Human Activity Recognition</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Let's Connect</h3>
+
+          <form action="#" class="form" data-form id="contact-form">
+
+            <div class="input-wrapper">
+              <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" id="email-address" name="email-address" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" id="send-button" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+    <div id="toast"></div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "QKFeEAmKhrKwoxnfM",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_template', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        document.getElementById('contact-form').reset();
+                        showToast('Message sent successfully!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+
+        function showToast(message) {
+          var toast = document.getElementById("toast");
+          toast.innerText = message;
+          toast.className = "show";
+          setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+        }
+    </script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
