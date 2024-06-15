@@ -87,24 +87,24 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="mailto:kkeerthana1997@gmail.com" target="_blank" class="social-link" title="kkeerthana1997@gmail.com">
-              <ion-icon name="paper-plane"></ion-icon>
+            <a href="mailto:kkeerthana1997@gmail.com" target="_blank" class="social-link">
+              <ion-icon name="paper-plane" title="kkeerthana1997@gmail.com"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/keerthanak-23/" target="_blank" class="social-link" title="linkedin.com/in/keerthanak-23">
-              <ion-icon name="logo-linkedIn"></ion-icon>
+            <a href="https://www.linkedin.com/in/keerthanak-23/" target="_blank" class="social-link" >
+              <ion-icon name="logo-linkedIn" title="LinkedIn"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a href="https://github.com/kkeerthana23" target="_blank" class="social-link" title="github.com/kkeerthana23">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/kkeerthana23" target="_blank" class="social-link" >
+              <ion-icon name="logo-github" title="Github Link"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a href="" target="_blank" class="social-link" title="" download="Keerthana_Kodaiarasu_Resume.pdf">
-              <ion-icon name="document-text-outline"></ion-icon>
+            <a href="#" class="social-link" id="downloadLink" target="_blank" download="Keerthana_Kodaiarasu_Resume.pdf">
+              <ion-icon name="document-text-outline" title="Download Resume"></ion-icon>
             </a>
           </li>
 
@@ -807,6 +807,17 @@
           toast.className = "show";
           setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
         }
+
+        document.getElementById('downloadLink').addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent the default anchor behavior
+          const link = document.createElement('a');
+          link.target = '_blank';
+          link.href = './assets/resume/Keerthana_Kodaiarasu_Resume.pdf'; // Replace with the actual file path
+          link.download = 'Keerthana_Kodaiarasu_Resume.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
     </script>
 
   <!--
