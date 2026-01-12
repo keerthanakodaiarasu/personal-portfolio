@@ -326,6 +326,7 @@ main {
 }
 
 .avatar {
+  width: 60px;
   border-radius: 50%;
   overflow: hidden;          /* IMPORTANT */
 }
@@ -1420,7 +1421,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* .avatar-box { border-radius: 30px; } */
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 60px; }
 
   .info-content .name { margin-bottom: 15px; }
 
